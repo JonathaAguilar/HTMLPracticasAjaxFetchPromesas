@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Buscar Usuario por ID</title>
+</head>
+<body>
+    
+    <center>
+        <h2> Buscar Usuario por ID</h2>
+        <input type="number" id="userId" placeholder="ID del Usuario">
+        <button id="btnBuscar">Buscar Usuario</button>
+    </center>
+
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Dirección</th>
+                <th>Ciudad</th>
+                <th>Código Postal</th>
+            </tr>
+        </thead>
+        <tbody id="lista"></tbody>
+    </table>
+
+    <script src="/js/buscarid.js"></script>
+</body>
+</html>
