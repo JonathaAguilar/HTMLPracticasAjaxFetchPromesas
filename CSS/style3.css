@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #000033, #000066);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100vh;
+}
+
+
+.buttons-container {
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(to bottom, #1a75ff, #004d99);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #004d99, #1a75ff);
+}
+
+
+#respuesta {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #004d99;
+    padding: 20px;
+    margin-top: 20px; 
+    border-radius: 5px;
+    max-width: 80%; 
+    width: 100%;
+    overflow: auto;
+    text-align: center; 
+    position: relative; 
+    z-index: 1; 
+}
+
+
+#respuesta table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+
+#respuesta th, #respuesta td {
+    border: 1px solid #004d99;
+    padding: 8px;
+    text-align: left;
+    color: white;
+}
+
+#respuesta th {
+    background-color: #1a75ff;
+}
+
+#respuesta tr:nth-child(even) {
+    background-color: #000033;
+}
+
+#respuesta tr:nth-child(odd) {
+    background-color: #000066;
+}
