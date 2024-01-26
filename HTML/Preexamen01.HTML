@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style4.css">
+    <title>Vendedores</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <center>
+            <h2>Vendedores</h2>
+            <input type="number" id="userId" placeholder="ID del Usuario">
+            <button id="btnBuscar">Buscar</button>
+        </center>
+        <div id="userData">
+            <div><strong>Nombre:</strong> <span id="userName"></span></div>
+            <div><strong>Nombre Usuario:</strong> <span id="userUsername"></span></div>
+            <div><strong>Email:</strong> <span id="userEmail"></span></div>
+            <div id="userAddress">
+                <strong>Domicilio:</strong>
+                <div>Calle: <span id="userStreet"></span></div>
+                <div>Número: <span id="userSuite"></span></div>
+                <div>Ciudad: <span id="userCity"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/buscarpre.js"></script>
+</body>
+</html>
