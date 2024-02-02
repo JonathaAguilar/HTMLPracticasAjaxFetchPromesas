@@ -11,17 +11,17 @@
         <h1>Veterinaria Canina</h1>
         <p>El Perro Mejor Amigo del Mundo</p>
 
-        <select id="breedList">
-            <option>Seleccione una raza</option>
+        <select id="breedList" onchange="displayBreedImage()">
+            <option value="">Seleccione una raza</option>
         </select>
-        <button id="loadBreedsButton">Cargar Razas</button>
 
         <div id="imageContainer">
             <img id="dogImage" src="" alt="Imagen de perro" hidden>
         </div>
-        <button id="showRandomImageButton">Ver Imagen</button>
+        <p id="breedName"></p>
+        <button id="showRandomImageButton">Ver Imagen Aleatoria</button>
     </div>
 
-    <script src="veterinaria.js"></script>
+    <script src="/js/veterinaria.js"></script>
 </body>
 </html>
